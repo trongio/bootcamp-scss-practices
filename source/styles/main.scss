@@ -1,12 +1,12 @@
 * {
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body{
-   margin-left: 50px;
-   margin-top: 50px;
+body {
+    margin-top: 50px;
+    margin-left: 50px;
 }
 
 $color-1: #F9B718;
@@ -29,175 +29,201 @@ $color-17: #A39CDC;
 $color-18: #8781BD;
 $color-19: #5B568E;
 
-
 $font-1: 'Lato', sans-serif;
-.wrap{
+
+.wrap {
     width: 570px;
     margin-bottom: 20px;
 }
-.large-wrap{
+
+.large-wrap {
     width: 1170px;
 }
-.warning{
+
+.warning {
+    display: flex;
+    position: relative;
+    padding: 0 0 34px 49px;
     border: 1px solid $color-3;
     border-radius: 10px;
-    display: flex;
-    padding: 0px 0 34px 49px;
-    position: relative;
-    &::before{
-        margin-top: 42px;
-        content: "\f12a";
+
+    &::before {
+        content: '\f12a';
         display: flex;
-        justify-content: center;
+        flex-shrink: 0;
         align-items: center;
-        font-family: 'FontAwesome';
-        border: 7px solid $color-1;
-        background-color: $color-2;
-        border-radius: 15px;
+        justify-content: center;
         width: 50px;
         height: 50px;
-        font-size: 24px;
-        border-radius: 50%;
-        color: $color-4;
+        margin-top: 42px;
         margin-right: 28px;
-        flex-shrink: 0;
+        border: 7px solid $color-1;
+        border-radius: 50%;
+        border-radius: 15px;
+        background-color: $color-2;
+        color: $color-4;
+        font-family: 'FontAwesome';
+        font-size: 24px;
     }
-    div{
+
+    div {
         margin-top: 38px;
         padding-right: 70px;
-        h1{
-            font-family: $font-1;
-            font-weight: 900;
-            font-size: 14px;
-            color: $color-5;
+
+        h1 {
             margin-bottom: 11px;
+            color: $color-5;
+            font-family: $font-1;
+            font-size: 14px;
+            font-weight: 900;
             letter-spacing: 1.4px;
         }
-    
-        p{
+
+        p {
             color: $color-6;
             font-family: $font-1;
             font-size: 14px;
             line-height: 24px;
         }
     }
-    a::before{
+
+    a::before {
         content: '\f00d';
         display: inline-block;
-        color: $color-7;
-        font-size: 14px;
         position: absolute;
         top: 18px;
         right: 19px;
+        color: $color-7;
         font-family: 'FontAwesome';
+        font-size: 14px;
     }
-    &.accepted{
-        &::before{
-            content: "\f00c";
-            background-color: $color-8;
+
+    &.accepted {
+
+        &::before {
+            content: '\f00c';
             border: 7px solid $color-9;
+            background-color: $color-8;
             color: $color-10;
         }
     }
-    &.error{
-        &::before{
-            content: "\f00d";
-            background-color: $color-11;
+
+    &.error {
+
+        &::before {
+            content: '\f00d';
             border: 7px solid $color-12;
+            background-color: $color-11;
             color: $color-13;
         }
     }
-    
-    &.power{
-        &::before{
-            content: "\f0e7";
-            background-color: $color-14;
+
+    &.power {
+
+        &::before {
+            content: '\f0e7';
             border: 7px solid $color-15;
+            background-color: $color-14;
             color: $color-16;
         }
     }
-    
-    &.note{
-        &::before{
-            content: "\f129";
-            background-color: $color-17;
+
+    &.note {
+
+        &::before {
+            content: '\f129';
             border: 7px solid $color-18;
+            background-color: $color-17;
             color: $color-19;
         }
-        div{
+
+        div {
             margin-top: 38px;
             padding-right: 43px;
         }
-        &.solid{
+
+        &.solid {
             background-color: $color-17;
         }
     }
 
-    &.solid{
+    &.solid {
         background-color: $color-2;
-        h1{
+
+        h1 {
             color: $color-5;
         }
-        p{
+
+        p {
             color: $color-5;
         }
-        a::before{
+
+        a::before {
             color: $color-4;
         }
 
-        &.accepted{
+        &.accepted {
             background-color: $color-8;
-            h1{
+
+            h1 {
                 color: $color-5;
             }
-            p{
+
+            p {
                 color: $color-5;
             }
-            a::before{
+
+            a::before {
                 color: $color-10;
             }
         }
 
-        &.error{
+        &.error {
             background-color: $color-11;
-            h1{
+
+            h1 {
                 color: $color-5;
             }
-            p{
+
+            p {
                 color: $color-5;
             }
-            a::before{
+
+            a::before {
                 color: $color-13;
             }
         }
 
-        &.power{
+        &.power {
             background-color: $color-14;
-            h1{
+
+            h1 {
                 color: $color-5;
             }
-            p{
+
+            p {
                 color: $color-5;
             }
-            a::before{
+
+            a::before {
                 color: $color-16;
             }
         }
 
-        &.note{
+        &.note {
             background-color: $color-17;
-            h1{
+
+            h1 {
                 color: $color-5;
             }
-            p{
+
+            p {
                 color: $color-5;
             }
-            a::before{
+
+            a::before {
                 color: $color-19;
             }
         }
-        
     }
-    
 }
-
