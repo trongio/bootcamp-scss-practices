@@ -29,6 +29,7 @@ $color-17: #A39CDC;
 $color-18: #8781BD;
 $color-19: #5B568E;
 
+
 $font-1: 'Lato', sans-serif;
 .wrap{
     width: 570px;
@@ -127,6 +128,76 @@ $font-1: 'Lato', sans-serif;
             margin-top: 38px;
             padding-right: 43px;
         }
+        &.solid{
+            background-color: $color-17;
+        }
     }
+
+    &.solid{
+        background-color: $color-2;
+        h1{
+            color: $color-5;
+        }
+        p{
+            color: $color-5;
+        }
+        a::before{
+            color: $color-4;
+        }
+
+        &.accepted{
+            background-color: $color-8;
+            h1{
+                color: $color-5;
+            }
+            p{
+                color: $color-5;
+            }
+            a::before{
+                color: $color-10;
+            }
+        }
+
+        &.error{
+            background-color: $color-11;
+            h1{
+                color: $color-5;
+            }
+            p{
+                color: $color-5;
+            }
+            a::before{
+                color: $color-13;
+            }
+        }
+
+        &.power{
+            background-color: $color-14;
+            h1{
+                color: $color-5;
+            }
+            p{
+                color: $color-5;
+            }
+            a::before{
+                color: $color-16;
+            }
+        }
+
+        &.note{
+            background-color: $color-17;
+            h1{
+                color: $color-5;
+            }
+            p{
+                color: $color-5;
+            }
+            a::before{
+                color: $color-19;
+            }
+        }
+        
+    }
+    
 }
 
